@@ -6,10 +6,10 @@
 
 .container {
     display: grid;
-    width: 100%;
-    height: 100vh;
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: repeat(auto-fill, minmax(831px, 1fr));
+    width: auto;
+    height: auto;
+    grid-template-rows: repeat(6, minmax(auto, 1fr));
+    grid-template-columns: minmax(auto, 1fr);
     grid-template-areas: "header" "service" "portfolio" "about" "pricing" "contact";
 }
 
@@ -23,10 +23,8 @@ header {
     grid-area: header;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
     height: 720px;
     background-image: url(Rawan\ Salah\ -\ Attachments/images/header_1.jpg);
-    background-color: rgba(0, 0, 0, 0.313);
     position: relative;
 }
 
@@ -91,7 +89,8 @@ header .hello {
 
 .services {
     grid-area: service;
-    display: flex;
+    position: relative;
+    bottom: 296px;
     flex-direction: column;
 }
 
@@ -114,12 +113,11 @@ header .hello {
 
 .sections {
     margin: 200px auto auto;
-    width: 100%;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(2, minmax(656px,1fr));
+    grid-template-columns: repeat(2, minmax(630px,1fr));
     grid-template-rows: repeat(2, minmax(300px,1fr));
-    gap: 50px 0;
+    gap: 43px 86px;
     position: relative;
     grid-template-areas: "section-1 section-2" "section-3 section-4";
 }
@@ -128,28 +126,27 @@ header .hello {
     font-weight: 800;
     font-size: 22px;
     color: black;
-    width: 330px;
-    margin: 0;
+    width: 300px;
 }
 
 .font-style-p {
-    margin: 0;
-    width: 330px;
+    width: 266px;
     color: #c2baaf;
 }
 
 
 .section-1 {
     grid-area: section-1;
-    display: flex;
-    flex-wrap: wrap;
+    position: relative;
+    left: 158px;
+    top: -14px;
 }
 
 
 .sections .h4-one {
     position: absolute;
     left: 139px;
-    top: 89px;
+    top: 89px
 }
 
 .sections .p-one {
@@ -169,14 +166,15 @@ header .hello {
 .section-2 {
     grid-area: section-2;
     position: absolute;
-    top: 100px;
-    right: 100px;
+    top: 85px;
+    right: 224px;
 }
 
 .sections .h4-two {
     position: absolute;
-    right: -32px;
-    top: -21px;
+    right: 2px;
+    top: -19px;
+    width: 300px;
 }
 
 .sections .p-two {
@@ -195,35 +193,47 @@ header .hello {
 
 .section-3 {
     grid-area: section-3;
-    display: flex;
     position: relative;
+    top: -204px;
+    left: 230px;
 }
 
 
 .sections .h4-three {
     position: absolute;
+    bottom: 68px;
+    left: 58px;
 }
 
 .sections .p-three {
     position: absolute;
+    bottom: -38px;
+    left: 56px;
 }
 
 .sections .fa-pen-ruler {
     position: absolute;
     font-size: 30px;
+    bottom: 10px;
 }
 
 .section-4 {
     grid-area: section-4;
-    display: flex;
+    position: absolute;
+    right: 601px;
+    top: 49px;
 }
 
 .sections .h4-four {
     position: absolute;
+    top: -52px;
+    left: 76px;
 }
 
 .sections .p-four {
     position: absolute;
+    top: 14px;
+    left: 75px;
 }
 
 
