@@ -9,7 +9,7 @@
     width: 100%;
     height: 100vh;
     grid-template-rows: repeat(6, auto);
-    grid-template-columns: auto;
+    grid-template-columns: repeat(auto-fill, minmax(831px, 1fr));
     grid-template-areas: "header" "service" "portfolio" "about" "pricing" "contact";
 }
 
@@ -112,6 +112,16 @@ header .hello {
     color: #c2baaf;
 }
 
+.sections {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(656px,1fr));
+    grid-template-rows: repeat(2, minmax(300px,1fr));
+    gap: 50px 0;
+    position: relative;
+    grid-template-areas: "section-1 section-2" "section-3 section-4";
+}
+
 .font-style-h4 {
     font-weight: 800;
     font-size: 22px;
@@ -128,112 +138,88 @@ header .hello {
 
 
 .section-1 {
+    grid-area: section-1;
     display: flex;
     flex-wrap: wrap;
 }
 
-.tv {
-    margin: 20px 0 30px 230px;
-    position: relative;
-}
-.tv h4 {
-    position: absolute;
-    left: -145px;
 
+.sections .h4-one {
+    position: absolute;
+    left: 115px;
 }
 
-.tv p {
+.sections .p-one {
     position: absolute;
-    left: -145px;
-    top: 40px;
+    left: 115px;
+    top: 50px;
 }
 
-.tv .fa-tv {
+.sections .fa-tv {
     position: absolute;
-    left: -195px;
-    top: 20px;
+    top: 30px;
+    left: 50px;
     font-size: 30px;
 }
 
 .section-2 {
+    grid-area: section-2;
     display: flex;
 }
 
-.set {
-    position: relative;
-    margin: 20px 0 30px 230px;
-}
-.set h4 {
+.sections .h4-two {
     position: absolute;
-    left: 270px;
-    top: -60px;
+    right: -10px;
 }
 
-.set p {
+.sections .p-two {
     position: absolute;
-    left: 270px;
-    top: -10px;
+    right: -5px;
+    top: 50px;
 }
 
-.set .fa-gear {
-    position: absolute;
+.sections .fa-gear {
     font-size: 30px;
-    left: 210px;
-    top: -35px;
+    position: absolute;
+    right: 345px;
+    top: 35px;
 }
 
 .section-3 {
+    grid-area: section-3;
     display: flex;
     position: relative;
 }
 
-.pen {
-    margin: 20px 0 30px 230px;
-    position: relative;
-}
-.pen h4 {
+
+.sections .h4-three {
     position: absolute;
-    left: -150px;
 }
 
-.pen p {
+.sections .p-three {
     position: absolute;
-    top: 40px;
-    left: -150px;
 }
 
-.pen .fa-pen-ruler {
+.sections .fa-pen-ruler {
     position: absolute;
     font-size: 30px;
-    left: -205px;
-    top: 25px;
 }
 
 .section-4 {
+    grid-area: section-4;
     display: flex;
 }
 
-.camera {
-    margin: 20px 0 30px 230px;
-    position: relative;
-}
-.camera h4 {
+.sections .h4-four {
     position: absolute;
-    left: 270px;
-    top: -60px;
-
 }
 
-.camera p {
+.sections .p-four {
     position: absolute;
-    left: 270px;
-    top: -10px;
 }
 
 
-.camera .fa-camera {
+.sections .fa-camera {
     position: absolute;
     font-size: 30px;
-    left: 210px;
-    top: -35px;
 }
