@@ -113,6 +113,8 @@ header .hello {
 }
 
 .sections {
+    margin: 200px auto auto;
+    width: 100%;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, minmax(656px,1fr));
@@ -146,43 +148,49 @@ header .hello {
 
 .sections .h4-one {
     position: absolute;
-    left: 115px;
+    left: 139px;
+    top: 89px;
 }
 
 .sections .p-one {
     position: absolute;
-    left: 115px;
-    top: 50px;
+    left: 136px;
+    top: 142px;
+    width: 266px;
 }
 
 .sections .fa-tv {
     position: absolute;
-    top: 30px;
-    left: 50px;
+    top: 108px;
+    left: 66px;
     font-size: 30px;
 }
 
 .section-2 {
     grid-area: section-2;
-    display: flex;
+    position: absolute;
+    top: 100px;
+    right: 100px;
 }
 
 .sections .h4-two {
     position: absolute;
-    right: -10px;
+    right: -32px;
+    top: -21px;
 }
 
 .sections .p-two {
     position: absolute;
-    right: -5px;
-    top: 50px;
+    right: 32px;
+    top: 35px;
+    width: 266px;
 }
 
 .sections .fa-gear {
     font-size: 30px;
     position: absolute;
     right: 345px;
-    top: 35px;
+    top: 8px;
 }
 
 .section-3 {
