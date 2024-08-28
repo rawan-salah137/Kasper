@@ -34,20 +34,22 @@ header {
 }
 
 .searcch:hover {
-    animation-name: search;
-    animation-duration: 0.5s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
+    animation: search 0.5s alternate 0.25s forwards ease-out;
     cursor: pointer;
+    -webkit-animation: search 0.5s alternate 0.25s forwards ease-out;
 }
 
 @keyframes search {
     25% {
-        width: 50px;
+        width: 37.5px;
+    }
+
+    50% {
+        width: 75px;
     }
 
     75% {
-        width: 100px;
+        width: 112.5px;
     }
 
     100% {
