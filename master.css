@@ -28,6 +28,33 @@ header {
     position: relative;
 }
 
+.searcch {
+    border-left: 2px solid white;
+    width: 0;
+}
+
+.searcch:hover {
+    animation-name: search;
+    animation-duration: 0.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+
+@keyframes search {
+    25% {
+        width: 50px;
+    }
+
+    75% {
+        width: 100px;
+    }
+
+    100% {
+        width: 150px;
+    }
+}
+
 .navigation {
     display: flex;
     justify-content: space-evenly;
@@ -326,6 +353,7 @@ header .hello {
 }
 
 .portfolio {
+    height: 1998px;
     grid-area: portfolio;
     position: relative;
     bottom: 1712px;
@@ -413,6 +441,7 @@ button:hover {
 }
 
 .about {
+    height: 2085px;
     grid-area: about;
     position: relative;
     bottom: 1680px;
@@ -605,22 +634,22 @@ h6 {
 
 .per-1 {
     right: 446px;
-    bottom: 1378px;
+    bottom: 1484px;
 }
 
 .per-2 {
     right: 425px;
-    bottom: 1279px;
+    bottom: 1385px;
 }
 
 .per-3 {
     right: 369px;
-    bottom: 1177px;
+    bottom: 1282px;
 }
 
 .per-4 {
     right: 407px;
-    bottom: 1078px;
+    bottom: 1183px;
 }
 
 .quote {
@@ -714,8 +743,30 @@ sub {
 }
 
 .pricing-1:hover {
-    box-shadow: 5px 6px 11px rgb(56 26 62);
-    translate: 3px 6px 9px;
+    animation-name: ani;
+    animation-duration: 1.5s;
+    animation-delay: -0.5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    translate: 6px 10px 15px;
+}
+
+@keyframes ani {
+    25%{
+        box-shadow: 5px 6px 11px rgb(56 26 62);
+    }
+
+    50% {
+        box-shadow: 6px 7px 13px rgb(56 26 62);
+    }
+
+    75% {
+        box-shadow: 5px 6px 11px rgb(56 26 62);
+    }
+
+    100% {
+        box-shadow: 3px 4px 9px rgb(56 26 62);
+    }
 }
 
 .contact {
