@@ -8,9 +8,9 @@
     display: grid;
     width: auto;
     height: auto;
-    grid-template-rows: repeat(6, minmax(auto, 1fr));
+    grid-template-rows: repeat(7, minmax(auto, 1fr));
     grid-template-columns: minmax(auto, 1fr);
-    grid-template-areas: "header" "service" "portfolio" "about" "pricing" "contact";
+    grid-template-areas: "header" "service" "portfolio" "about" "pricing" "contact" "footer";
 }
 
 body {
@@ -90,7 +90,7 @@ header .hello {
 .services {
     grid-area: service;
     position: relative;
-    bottom: 1904px;
+    bottom: 1288px;
 }
 
 .title {
@@ -328,28 +328,14 @@ header .hello {
 .portfolio {
     grid-area: portfolio;
     position: relative;
-    /* bottom: 1902px; */
-}
-
-/* .design-1 {
-    width: 230px;
-    margin: 0 0 50px 50px;
-    color: white;
-    font-size: 20px;
-}
-
-.d li {
-    margin: 0 0 50px 50px;
-}
-
-span {
-    margin-right: 50px;
+    bottom: 1712px;
 }
 
 .n {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .capital {
@@ -370,10 +356,11 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
 }
 
 .style-img {
-    width: 300px;
+    width: 25%;
     height: 200px;
 }
 
@@ -399,6 +386,7 @@ button:hover {
     cursor: pointer;
     background-color: aquamarine;
     color: rgb(114, 89, 51);
+    box-shadow: -2px 10px 27px #0c1e18;
 }
 
 .myvid {
@@ -422,4 +410,510 @@ button:hover {
 .parag {
     text-align: center;
     margin: 30px 0;
-} */
+}
+
+.about {
+    grid-area: about;
+    position: relative;
+    bottom: 1680px;
+}
+
+.title-2 {
+    text-align: center;
+    margin: -165px 0 -65px 0;
+    font-size: 35px;
+    font-weight: 900;
+}
+.header-3 {
+    background-image: url(Rawan\ Salah\ -\ Attachments/images/header_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 500px;
+    position: relative;
+}
+
+.stat {
+    height: 200px;
+    width: 1150px;
+    background-color: rgb(0 240 254 / 59%);
+    left: 90px;
+    top: 170px;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.one {
+    left: 5px;
+    position: relative;
+    bottom: 270px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+    color: white;
+}
+.r {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.space {
+    margin-top: 10px;
+    font-size: 37px;
+    margin-bottom: 20px;
+}
+
+.space-1 {
+    margin-top: 5px;
+}
+
+.special {
+    margin-left: 10px;
+}
+
+h6 {
+    margin-bottom: 50px;
+}
+
+.one-1 {
+    position: relative;
+    left: -30px;
+}
+
+.us {
+    display: flex;
+    justify-content: space-around;
+}
+
+.skill-1 {
+    margin: 50px 0 0 150px;
+    color: #c2baaf;
+}
+
+.test-1 {
+    margin: 40px 160px -35px 180px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.us-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.test-2 {
+    position: relative;
+}
+
+.skills-3 {
+    width: 530px;
+    right: 660px;
+    font-weight: 600;
+    top: 285px;
+    position: absolute;
+}
+
+.skills-4 {
+    bottom: 1406px;
+    position: absolute;
+    right: 691px;
+    font-weight: 600;
+    width: 530px;
+}
+
+.progress {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    margin: 0 270px 50px 0;
+}
+
+.bar {
+    font-size: 20px;
+}
+
+.container-2 {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    left: 1000px;
+    background-color: rgb(192, 192, 192);
+    width: 25%;
+    margin-bottom: 40px;
+}
+
+.special-cont {
+    margin-top: 20px;
+}
+
+.skillss {
+    background-color: rgb(8, 138, 225);
+    color: white;
+    padding: 1%;
+    text-align: right;
+    height: 30px;
+}
+
+.s-bar {
+    margin-top: 20px;
+}
+
+.adobe {
+    width: 90%;
+}
+
+.html {
+    width: 83%;
+}
+
+.js {
+    width: 65%;
+}
+
+.php {
+    width: 77%;
+}
+
+.same {
+    width: 50px;
+    text-align: center;
+    z-index: -2;
+    padding: 5px 0;
+    color: white;
+    display: inline-block;
+    background-color: black;
+    position: absolute;
+}
+
+.same::before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    background-color: black;
+    position: absolute;
+    left: 14px;
+    margin: 10px 0px 10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black white white white;
+    z-index: 2;
+    top: 18px;
+}
+
+.per-1 {
+    right: 446px;
+    bottom: 1480px;
+}
+
+.per-2 {
+    right: 425px;
+    bottom: 1385px;
+}
+
+.per-3 {
+    right: 369px;
+    bottom: 1285px;
+}
+
+.per-4 {
+    right: 407px;
+    bottom: 1185px;
+}
+
+.quote {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    background-image: url(Rawan\ Salah\ -\ Attachments/images/quote.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.quotes {
+    display: flex;
+    justify-content: center;
+    color: white;
+    position: relative;
+    right: 100px;
+    top: 100px;
+}
+
+.q {
+    color: white;
+    position: relative;
+    right: 575px;
+    top: 195px;
+}
+
+.pricing {
+    grid-area: pricing;
+    position: relative;
+    bottom: 2405px;
+}
+
+.title-3 {
+    text-align: center;
+    margin: 50px 0 -65px 0;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.price {
+    display: flex;
+    justify-content: space-around;
+}
+.pricing-1 {
+    text-align: center;
+    width: 300px;
+    height: 540px;
+}
+
+.pr {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: black;
+}
+
+sub {
+    font-size: 15px;
+}
+
+.pri {
+    padding: 20px;
+    color: black;
+}
+
+.bordert {
+    border-top: 1px solid aqua;
+}
+
+.borderb {
+    border-bottom: 1px solid aqua;
+}
+
+.paddingb {
+    padding-bottom: 30px;
+}
+
+.paddingt {
+    padding-top: 30px;
+}
+
+.buy {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+.buy:hover {
+    background-color: beige;
+    box-shadow: 5px 6px 11px rgb(56 26 62);
+}
+
+.pricing-1:hover {
+    box-shadow: 5px 6px 11px rgb(56 26 62);
+    translate: 3px 6px 9px;
+}
+
+.contact {
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 3654px;
+}
+
+.center {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.btn {
+    background-color: rgb(221, 209, 193);
+    color: black;
+}
+
+.btn:hover {
+    background-color: rgb(14, 30, 30);
+}
+
+.mail {
+    margin-top: 50px;
+    background-image: url(Rawan\ Salah\ -\ Attachments/images/subscribe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 0%;
+    display: flex;
+
+}
+
+.email {
+    display: flex;
+    margin: 300px 0 300px 200px;
+    position: relative;
+}
+
+.e-mail {
+    background-color: rgba(240, 248, 255, 0);
+    width: 400px;
+    height: 40px;
+    position: relative;
+}
+
+::placeholder {
+    position: absolute;
+    left: 40px;
+    font-size: 15px;
+}
+
+.fa-envelope {
+    top: 7px;
+    position: absolute;
+    left: 12px;
+    font-size: 30px;
+    color: white;
+}
+
+.subsbtn .subs {
+    margin: -2px;
+    width: 180px;
+    height: 49px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.subsbtn .subs:hover {
+    background-color: rgb(62, 80, 74);
+    color: bisque;
+}
+
+.mail p {
+    color: white;
+    margin: 300px 0 0 145px;
+}
+
+.conc {
+    display: flex;
+    position: relative;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.width {
+    width: 300px;
+    height: 40px;
+}
+
+.name {
+    margin: 90px 0 0 200px;
+}
+
+.e-mail-2,
+.message {
+    margin: 10px 0 0 200px;
+}
+
+.width-2 {
+    width: 300px;
+    height: 100px;
+}
+
+.touch {
+    position: absolute;
+    left: 565px;
+    top:90px;
+}
+
+
+.touch h6 {
+    margin: 0;
+}
+
+h3 .add {
+    margin-top: 70px;
+}
+
+.btnm {
+    text-align: center;
+    margin: 50px;
+}
+
+.btnm button {
+    background-color: rgb(21, 230, 160);
+    width: 150px;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(Rawan\ Salah\ -\ Attachments/images/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+}
+
+
+
+.social {
+    color: white;
+    text-transform: uppercase;
+}
+
+.social h4 {
+    font-weight: 800;
+    font-size: 25px;
+    border-bottom: 1px solid white;
+}
+
+.social-icons {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 100px;
+}
+
+.fa-brands,
+.fa-g {
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.fa-brands:hover,
+.fa-g:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.copy {
+    color: white;
+}
+
+.color {
+    color: rgb(19, 42, 249);
+    margin-right: 4px;
+}
