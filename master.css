@@ -31,9 +31,14 @@ header {
 .searcch {
     border-left: 2px solid white;
     width: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
-.searcch:hover {
+.fa-magnifying-glass:hover + .searcch {
     animation: search 0.5s alternate 0.25s forwards ease-out;
     cursor: pointer;
     -webkit-animation: search 0.5s alternate 0.25s forwards ease-out;
@@ -99,6 +104,46 @@ header .hello {
     text-transform: capitalize;
     width: 50%;
     height: 50%;
+}
+
+.small-nav {
+    display: none;
+}
+.navvvv {
+    display: none;
+}
+
+.fa-bars{
+    display: none;
+}
+
+@media(max-width:900px) {
+
+    .fa-bars {
+        display: block;
+        font-size: 30px;
+        color: white;
+        margin: 20px 0;
+    }
+
+   
+    .nav {
+        display: none;
+    }
+    .small-nav {
+        display: none;
+        height: 0;
+        z-index: 1;
+        background-color: rgba(0, 0, 0, 0.817);
+    }
+
+    .fa-bars:hover + .small-nav {
+        height: block;
+        cursor: pointer;
+    }
+    .hello {
+        height: 400px;
+    }
 }
 
 
@@ -383,13 +428,49 @@ header .hello {
 }
 
 .imagess {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
 }
 
+.ball-1 {
+    display: none;
+    left: 114px;
+    bottom: 253px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.style-img:hover + .ball-1,
+.ball-1:hover {
+    display: block;
+    z-index: 2;
+}
+
+.fa-plus {
+    left: 16px;
+    font-size: 72px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 14px;
+}
+
+.style-img:hover + .fa-plus {
+    display: block;
+    z-index: 3;
+}
+
+
+
 .style-img {
+    z-index: 1;
     width: 25%;
     height: 200px;
 }
